@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "con-fusion",
   "version": "0.0.0",
   "scripts": {
@@ -48,5 +49,28 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~2.9.2"
+=======
+  "name": "angular-test",
+  "version": "1.0.0",
+  "description": "this is a file to learn node",
+  "main": "index.html",
+  "scripts": {
+  "start":"npm run lite",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "lite":"lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vibhaver/angular-courseera.git"
+  },
+  "author": "vibha verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vibhaver/angular-courseera/issues"
+  },
+  "homepage": "https://github.com/vibhaver/angular-courseera#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+>>>>>>> 1eb4ba60b9210da41aa47a79a31f2b447c815303
   }
 }
