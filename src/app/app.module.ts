@@ -13,17 +13,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import  'hammerjs';
 
 import { DishService  } from './services/dish.service';
-
 import { PromotionService } from './services/promotion.service';
-
-import { LeaderService } from './services/leader.service';
-
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailsComponent } from './dishdetails/dishdetails.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { LeaderService } from './services/leader.service';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
@@ -35,6 +32,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule} from  '@angular/material/slide-toggle';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
 	declarations: [
@@ -65,7 +63,8 @@ import { MatSlideToggleModule} from  '@angular/material/slide-toggle';
 		FormsModule,
 		ReactiveFormsModule,
 		MatSelectModule,
-		MatSlideToggleModule
+		MatSlideToggleModule,
+		MatProgressSpinnerModule
 
 	],
 	providers: [
