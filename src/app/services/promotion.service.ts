@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import {Promotion } from '../shared folder/promotion';
-import {PROMOTIONS} from '../shared folder/promotions';
+
+import { Promotion } from '../shared Folder/promotion';
+import { PROMOTIONS } from '../shared Folder/promotions';
 
 @Injectable({
   providedIn: 'root'
@@ -8,14 +9,19 @@ import {PROMOTIONS} from '../shared folder/promotions';
 export class PromotionService {
 
   constructor() { }
+  getPromotions(): Promise<Promotion[]> {
+    return Promise.resolve(PROMOTIONS);
+  }
 
-	getPromotions(): Promotion[]{
-		return PROMOTIONS;
-	}
-	getPromotion(id: string): Promotion{
-		return PROMOTIONS.filter((promo) => (promo.id === id))[0];
-	}
-	getFeaturedPromotion(): Promotion{
-		return PROMOTIONS.filter((promo) => promo.featured)[0];
-	}
+  getPromotion(id: string): Promise<Promotion> {
+    return Promise.resolve(PROMOTIONS.filter((promo) => (promo.id === id))[0]);
+  }
+
+  getFeaturedPromotion(): Promise<Promotion> {
+    return Promise.resolve(PROMOTIONS.filter((promo) => promo.featured)[0]);
+  }
+
 }
+
+
+
