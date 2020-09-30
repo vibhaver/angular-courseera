@@ -11,9 +11,6 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
 import  'hammerjs';
-
-import { DishService  } from './services/dish.service';
-import { PromotionService } from './services/promotion.service';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailsComponent } from './dishdetails/dishdetails.component';
@@ -24,7 +21,8 @@ import { LeaderService } from './services/leader.service';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
-
+import { PromotionService } from './services/promotion.service';
+import { DishService  } from './services/dish.service';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
