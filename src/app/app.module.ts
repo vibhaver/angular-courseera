@@ -31,6 +31,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule} from  '@angular/material/slide-toggle';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { HttpClientModule } from '@angular/common/http';
+import { baseURL } from './shared folder/baseurl';
 
 @NgModule({
 	declarations: [
@@ -62,13 +64,15 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 		ReactiveFormsModule,
 		MatSelectModule,
 		MatSlideToggleModule,
-		MatProgressSpinnerModule
+		MatProgressSpinnerModule,
+		HttpClientModule
 
 	],
 	providers: [
 		DishService,
 		PromotionService,
-		LeaderService
+		LeaderService,
+		{ provide: 'BaseURL', useValue: baseURL}
 	],
 	entryComponents: [
 		LoginComponent
